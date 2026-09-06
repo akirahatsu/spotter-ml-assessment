@@ -60,4 +60,8 @@ instead of splitting  test == 10% train == 90 i splitted them based on time data
           HistGradientBoostingRegressor : 0.8201703056067264 
 
 
+# Instead of changing string volue into numeric blindly i deleted them reason numeric volue = [1,2,3 .. ] 
+# and string volues are Richmond', 'Philadelphia', 'Hartford', 'Dallas' 
+# Reasoning is from 1 to 2 there is single unit change and from 2 to 3 but from Richmond to Philadelphia or from Hartford to Dallas change is not mesurable 
+# like a numerical distence that is why to prevent from extra noise i decided not to use them
 
